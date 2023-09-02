@@ -1,0 +1,89 @@
+.navbar{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  background-color: yellow;
+  flex-direction: row;
+}
+.navbar .logo {
+  display: flex;
+}
+.logo{
+  background-color: yellow;
+  max-width: 100%;
+}
+.navbar .menu {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu a {
+  color: rgb(18, 17, 17); 
+  text-decoration: none; 
+  margin: 0 10px; 
+  font-size: 16px; 
+}
+
+.menu a:hover {
+  color: blue;
+}
+
+.menu-icon{
+  display: none;
+}
+.hidden-menu-icon{
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .menu-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar #open .hidden-menu-icon {
+    display: flex;
+    position: absolute;
+    top: 100px; 
+    right: 0;
+    width: 200px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar #close .hidden-menu-icon {
+    display: none;
+  }
+  .hidden-menu-icon a{
+    display: flex;
+    text-decoration: none;
+    color: rgb(18, 17, 17); 
+   
+  }
+  .hidden-menu-icon a:hover {
+    color: blue;
+  }
+  .navbar .menu {
+    display: none;
+  }
+  .menu a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  
+}
+
+
+
+
+
+
+
+
+
+

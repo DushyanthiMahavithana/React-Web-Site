@@ -1,0 +1,48 @@
+.Contactus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contactImage {
+    flex: 50%; 
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .formSide {
+    flex: 1;
+    margin: 50px;
+  }
+  
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  Input,
+  textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #f6f206;
+    color: rgb(15, 14, 14);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #2238ff;
+  }
+  
